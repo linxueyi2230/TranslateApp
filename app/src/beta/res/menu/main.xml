@@ -23,10 +23,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools" >
-    <item
-        android:id="@id/menu_opinion"
-        app:showAsAction="ifRoom"
-        android:title="@string/action_opinion"/>
+    <!--<item-->
+        <!--android:id="@id/menu_opinion"-->
+        <!--app:showAsAction="ifRoom"-->
+        <!--android:title="@string/action_opinion"/>-->
 
     <item
         android:id="@+id/menu_book"
@@ -38,15 +38,15 @@
         app:showAsAction="never"
         android:title="@string/hist_record"/>
 
-    <item
-        android:id="@+id/menu_support"
-        app:showAsAction="never"
-        android:title="@string/menu_support"/>
+    <!--<item-->
+        <!--android:id="@+id/menu_support"-->
+        <!--app:showAsAction="never"-->
+        <!--android:title="@string/menu_support"/>-->
 
-    <item
-        android:id="@+id/menu_score"
-        app:showAsAction="never"
-        android:title="@string/menu_score"/>
+    <!--<item-->
+        <!--android:id="@+id/menu_score"-->
+        <!--app:showAsAction="never"-->
+        <!--android:title="@string/menu_score"/>-->
 
 
     <item

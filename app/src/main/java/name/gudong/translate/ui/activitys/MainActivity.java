@@ -138,6 +138,8 @@ public class MainActivity extends BaseActivity<MainPresenter> implements IMainVi
         }else{
             guideCheck();
         }
+
+        setTitle("翻译");
     }
 
     private void guideCheck() {
@@ -245,7 +247,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements IMainVi
 
     private void checkVersion() {
         //if (BuildConfig.DEBUG) return;
-        mPresenter.checkVersionAndShowChangeLog();
+        //mPresenter.checkVersionAndShowChangeLog();
 
     }
 
@@ -287,10 +289,10 @@ public class MainActivity extends BaseActivity<MainPresenter> implements IMainVi
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.menu_opinion:
-                NavigationManager.gotoSendEmail(this);
-                MobclickAgent.onEvent(this, "menu_opinion");
-                break;
+//            case R.id.menu_opinion:
+//                NavigationManager.gotoSendEmail(this);
+//                MobclickAgent.onEvent(this, "menu_opinion");
+//                break;
             case R.id.menu_book:
                 WordsBookActivity.gotoWordsBook(this);
                 MobclickAgent.onEvent(this, "open_book");
@@ -311,15 +313,15 @@ public class MainActivity extends BaseActivity<MainPresenter> implements IMainVi
                 closeKeyboard();
                 NavigationManager.gotoSetting(this);
                 break;
-            case R.id.menu_score:
-                mPresenter.gotoMarket();
-                MobclickAgent.onEvent(this, "menu_score");
-                break;
-            case R.id.menu_support:
-                DialogUtil.showSupport(this);
-                MobclickAgent.onEvent(this, "menu_support");
-                AnswerUtil.actionSupport();
-                break;
+//            case R.id.menu_score:
+//                mPresenter.gotoMarket();
+//                MobclickAgent.onEvent(this, "menu_score");
+//                break;
+//            case R.id.menu_support:
+//                DialogUtil.showSupport(this);
+//                MobclickAgent.onEvent(this, "menu_support");
+//                AnswerUtil.actionSupport();
+//                break;
         }
         return super.onOptionsItemSelected(item);
     }

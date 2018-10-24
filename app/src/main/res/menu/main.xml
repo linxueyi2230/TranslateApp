@@ -34,15 +34,15 @@
         app:showAsAction="never"
         android:title="@string/hist_record"/>
 
-    <item
-        android:id="@+id/menu_support"
-        app:showAsAction="never"
-        android:title="@string/menu_support"/>
+    <!--<item-->
+        <!--android:id="@+id/menu_support"-->
+        <!--app:showAsAction="never"-->
+        <!--android:title="@string/menu_support"/>-->
 
-    <item
-        android:id="@+id/menu_score"
-        app:showAsAction="never"
-        android:title="@string/menu_score"/>
+    <!--<item-->
+        <!--android:id="@+id/menu_score"-->
+        <!--app:showAsAction="never"-->
+        <!--android:title="@string/menu_score"/>-->
 
     <item
         android:id="@+id/menu_about"
