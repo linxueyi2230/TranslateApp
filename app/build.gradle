@@ -85,11 +85,11 @@ android {
                 signingConfig signingConfigs.releaseConfig
             }
             //设置是否混淆
-            minifyEnabled true
+            minifyEnabled false
             //设置压缩对齐
-            zipAlignEnabled true
+            zipAlignEnabled false
             //移除无用的资源文件
-            shrinkResources true
+            shrinkResources false
             //设置混淆配置文件
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             //指定签名包得输入文件名称
