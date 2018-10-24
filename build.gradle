@@ -1,21 +1,21 @@
 ext {
     configuration = [
-            package             : "name.gudong.translate",
-            buildToolsVersion   : "26.0.2",
-            compileVersion      : 26,
-            minSdk              : 16,
+            package             : "com.dingdong.translate",
+            buildToolsVersion   : "27.0.3",
+            compileVersion      : 27,
+            minSdk              : 17,
             minSdk21            : 21,
-            targetSdk           : 25,
+            targetSdk           : 27,
             version_code        : 181,
             version_name        : "1.8.1"
     ]
 
     libraries = [
-            supportVersion      : "26.0.0-alpha1",
+            supportVersion      : "27.1.1",
             dagger              : "2.0",
             rxandroid           : "1.2.1",
             retrofit            : "2.1.0",
-            butterknife         : "8.4.0",
+            butterknife         : "8.8.1",
             recycler_animators  : "2.0.0",
             javax_annotation    : "10.0-b28",
             logger              : "1.15",
@@ -39,13 +39,14 @@ buildscript {
     repositories {
         jcenter()
         mavenCentral()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.1.1'
 
-        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        //classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
 
-        classpath 'me.tatarka:gradle-retrolambda:3.2.4'
+        //classpath 'me.tatarka:gradle-retrolambda:3.2.4'
 
         classpath 'com.google.gms:google-services:3.0.0'
 
@@ -58,6 +59,7 @@ allprojects {
         maven {
             url "https://jitpack.io"
         }
+        google()
     }
 }
 

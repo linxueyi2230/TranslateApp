@@ -14,8 +14,8 @@ repositories {
     maven { url 'https://maven.fabric.io/public' }
 }
 
-apply plugin: 'com.neenbedankt.android-apt'
-apply plugin: 'me.tatarka.retrolambda'
+//apply plugin: 'com.neenbedankt.android-apt'
+//apply plugin: 'me.tatarka.retrolambda'
 
 //格式化打完完成后APK名称中的时间
 def releaseTime() {
@@ -37,6 +37,8 @@ android {
         targetSdkVersion cfg.targetSdk
         versionCode cfg.version_code
         versionName cfg.version_name
+
+        flavorDimensions "versionCode"
 
         //for use support vectorDrawables
         vectorDrawables.useSupportLibrary = true
@@ -156,76 +158,76 @@ if (propFile.exists()) {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     // Test
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    testCompile "junit:junit:${test.junit}"
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation "junit:junit:${test.junit}"
     // Android
-    compile "com.android.support:recyclerview-v7:${libs.supportVersion}"
-    compile "com.android.support:appcompat-v7:${libs.supportVersion}"
-    compile "com.android.support:design:${libs.supportVersion}"
+    implementation "com.android.support:recyclerview-v7:${libs.supportVersion}"
+    implementation "com.android.support:appcompat-v7:${libs.supportVersion}"
+    implementation "com.android.support:design:${libs.supportVersion}"
 
     // Google
-    compile "com.google.dagger:dagger:${libs.dagger}"
-    apt "com.google.dagger:dagger-compiler:${libs.dagger}"
-    provided "org.glassfish:javax.annotation:${libs.javax_annotation}"
+    implementation "com.google.dagger:dagger:${libs.dagger}"
+    annotationProcessor "com.google.dagger:dagger-compiler:${libs.dagger}"
+    compileOnly "org.glassfish:javax.annotation:${libs.javax_annotation}"
     // Square
-    compile "com.jakewharton:butterknife:${libs.butterknife}"
-    apt "com.jakewharton:butterknife-compiler:${libs.butterknife}"
-    compile "com.squareup.retrofit2:retrofit:${libs.retrofit}"
-    compile "com.squareup.retrofit2:converter-gson:${libs.retrofit}"
-    compile "com.squareup.retrofit2:adapter-rxjava:${libs.retrofit}"
+    implementation "com.jakewharton:butterknife:${libs.butterknife}"
+    annotationProcessor "com.jakewharton:butterknife-compiler:${libs.butterknife}"
+    implementation "com.squareup.retrofit2:retrofit:${libs.retrofit}"
+    implementation "com.squareup.retrofit2:converter-gson:${libs.retrofit}"
+    implementation "com.squareup.retrofit2:adapter-rxjava:${libs.retrofit}"
     // Reactive
-    compile "io.reactivex:rxandroid:${libs.rxandroid}"
+    implementation "io.reactivex:rxandroid:${libs.rxandroid}"
     // Other
-    compile "com.orhanobut:logger:${libs.logger}"
-    retrolambdaConfig "net.orfjackal.retrolambda:retrolambda:${libs.retrolambda}"
-    compile "com.jonathanfinerty.once:once:${libs.once}"
+    implementation "com.orhanobut:logger:${libs.logger}"
+    //retrolambdaConfig "net.orfjackal.retrolambda:retrolambda:${libs.retrolambda}"
+    implementation "com.jonathanfinerty.once:once:${libs.once}"
 
-    compile "com.android.support:preference-v7:${libs.supportVersion}"
-    compile 'com.umeng.analytics:analytics:latest.integration'
-    compile "com.android.support:support-v4:${libs.supportVersion}"
+    implementation "com.android.support:preference-v7:${libs.supportVersion}"
+    implementation 'com.umeng.analytics:analytics:latest.integration'
+    implementation "com.android.support:support-v4:${libs.supportVersion}"
 
-    compile "moe.feng:AlipayZeroSdk:${libs.alipay_zero_sdk}"
+    implementation "moe.feng:AlipayZeroSdk:${libs.alipay_zero_sdk}"
 
-    compile "com.jenzz:materialpreference:${libs.materialpreference}"
-    compile "com.github.bumptech.glide:glide:${libs.glide}"
+    implementation "com.jenzz:materialpreference:${libs.materialpreference}"
+    implementation "com.github.bumptech.glide:glide:${libs.glide}"
 
-    compile("me.drakeet.library:crashwoodpecker:${libs.crashwoodpecker}") {
+    implementation("me.drakeet.library:crashwoodpecker:${libs.crashwoodpecker}") {
         exclude module: 'recyclerview-v7'
     }
 
-    compile "com.readystatesoftware.sqliteasset:sqliteassethelper:${libs.sqliteassethelper}"
+    implementation "com.readystatesoftware.sqliteasset:sqliteassethelper:${libs.sqliteassethelper}"
 
-    compile "net.grandcentrix.tray:tray:${libs.tray}"
+    implementation "net.grandcentrix.tray:tray:${libs.tray}"
 
-    compile "com.facebook.stetho:stetho:${libs.stetho}"
-    compile "com.facebook.stetho:stetho-okhttp3:${libs.stetho_okhttp3}"
+    implementation "com.facebook.stetho:stetho:${libs.stetho}"
+    implementation "com.facebook.stetho:stetho-okhttp3:${libs.stetho_okhttp3}"
 
-    compile('me.drakeet.support:about:2.0.2', {
+    implementation('me.drakeet.support:about:2.0.2', {
         exclude module: 'recyclerview-v7'
         exclude module: 'appcompat-v7'
         exclude module: 'design'
     })
-    compile('me.drakeet.multitype:multitype:3.3.3', {
+    implementation('me.drakeet.multitype:multitype:3.3.3', {
         exclude module: 'recyclerview-v7'
         exclude module: 'appcompat-v7'
         exclude module: 'design'
     })
 
-//    compile ('me.drakeet.support:about-extension:2.0.2', {
+//    implementation ('me.drakeet.support:about-extension:2.0.2', {
 //        exclude module: 'recyclerview-v7'
 //        exclude module: 'appcompat-v7'
 //        exclude module: 'design'
 //    })
-    compile 'com.squareup.picasso:picasso:2.5.2'
-    compile('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
         transitive = true;
     }
-    compile('com.crashlytics.sdk.android:answers:1.4.1@aar') {
+    implementation('com.crashlytics.sdk.android:answers:1.4.1@aar') {
         transitive = true;
     }
 
-    compile 'com.github.anzewei:parallaxbacklayout:1.1.9'
-    compile 'com.airbnb.android:lottie:2.1.0'
+    implementation 'com.github.anzewei:parallaxbacklayout:1.1.9'
+    implementation 'com.airbnb.android:lottie:2.1.0'
 }
