@@ -67,6 +67,10 @@ android {
         buildConfigField "Boolean", "IS_DEBUG", 'true'
 
         resValue "string", "tray__authority", "${cfg.package}.tray"
+
+        manifestPlaceholders = [
+                jpush_appkey : "0bbfa5d1d42e069d9b572ce8"
+        ]
     }
 
     signingConfigs {
@@ -230,4 +234,5 @@ dependencies {
 
     implementation 'com.github.anzewei:parallaxbacklayout:1.1.9'
     implementation 'com.airbnb.android:lottie:2.1.0'
+    implementation project(':shadow6.0')
 }

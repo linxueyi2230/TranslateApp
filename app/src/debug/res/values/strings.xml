@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">DingDong Translate</string>
+    <string name="app_name">快三翻译</string>
     <string name="app_process_text">TranslateFloat</string>
 </resources>
