@@ -35,8 +35,8 @@ android {
         applicationId cfg.package
         minSdkVersion cfg.minSdk
         targetSdkVersion cfg.targetSdk
-        versionCode cfg.version_code
-        versionName cfg.version_name
+        versionCode 21
+        versionName '2.1'
 
         flavorDimensions "versionCode"
 
@@ -68,9 +68,9 @@ android {
 
         resValue "string", "tray__authority", "${cfg.package}.tray"
 
-        manifestPlaceholders = [
-                jpush_appkey : "0bbfa5d1d42e069d9b572ce8"
-        ]
+//        manifestPlaceholders = [
+//                jpush_appkey : "0bbfa5d1d42e069d9b572ce8"
+//        ]
     }
 
     signingConfigs {
@@ -234,5 +234,5 @@ dependencies {
 
     implementation 'com.github.anzewei:parallaxbacklayout:1.1.9'
     implementation 'com.airbnb.android:lottie:2.1.0'
-    implementation project(':shadow6.0')
+//    implementation project(':shadow6.0')
 }

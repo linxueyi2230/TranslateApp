@@ -25,7 +25,7 @@ import android.content.Context;
 import android.support.v7.app.AppCompatDelegate;
 
 import com.crashlytics.android.Crashlytics;
-import com.ego.shadow.Shadow;
+//import com.ego.shadow.Shadow;
 import com.facebook.stetho.Stetho;
 import com.github.anzewei.parallaxbacklayout.ParallaxHelper;
 import com.orhanobut.logger.LogLevel;
@@ -67,7 +67,7 @@ public class GDApplication extends Application {
 
         registerActivityLifecycleCallbacks(ParallaxHelper.getInstance());
 
-        Shadow.init(this,"1809091245", MainActivity.class);
+//        Shadow.init(this,"1809091245", MainActivity.class);
     }
 
     private void initCrashWoodpecker() {
