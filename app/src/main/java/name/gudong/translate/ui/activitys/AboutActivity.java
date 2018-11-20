@@ -43,7 +43,7 @@ public class AboutActivity extends AbsAboutActivity implements IAboutView {
 
     @Override
     protected void onCreateHeader(@NonNull ImageView icon, @NonNull TextView slogan, @NonNull TextView version) {
-        icon.setImageResource(R.mipmap.ic_launcher);
+        icon.setImageResource(R.mipmap.ic_launcher_dingdong);
         slogan.setText(R.string.app_name);
         version.setText("v" + BuildConfig.VERSION_NAME);
     }
