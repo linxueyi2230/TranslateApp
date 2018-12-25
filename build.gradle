@@ -3,7 +3,7 @@ ext {
             package             : "com.dingdong.translate",
             buildToolsVersion   : "27.0.3",
             compileVersion      : 27,
-            minSdk              : 17,
+            minSdk              : 21,
             minSdk21            : 21,
             targetSdk           : 27,
             version_code        : 182,

@@ -1,8 +1,0 @@
-<resources>
-
-
-    <style name="ShadowTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:typeface">serif</item>
-    </style>
-
-</resources>

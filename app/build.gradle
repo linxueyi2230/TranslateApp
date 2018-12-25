@@ -226,13 +226,13 @@ dependencies {
 //    })
     implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
-        transitive = true;
+        transitive = true
     }
     implementation('com.crashlytics.sdk.android:answers:1.4.1@aar') {
-        transitive = true;
+        transitive = true
     }
 
     implementation 'com.github.anzewei:parallaxbacklayout:1.1.9'
     implementation 'com.airbnb.android:lottie:2.1.0'
-    implementation project(':shadow6.0')
+    //implementation project(':shadow6.0')
 }
