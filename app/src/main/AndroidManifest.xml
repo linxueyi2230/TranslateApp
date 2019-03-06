@@ -19,7 +19,7 @@
     <application
         android:name=".GDApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_ks"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -43,6 +43,7 @@
             android:label="@string/app_name"
             android:theme="@style/myTransparent">
             <intent-filter>
+
                 <action android:name="android.intent.action.PROCESS_TEXT"/>
 
                 <category android:name="android.intent.category.DEFAULT"/>
@@ -53,6 +54,9 @@
         <activity
             android:name=".ui.activitys.MainActivity"
             android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
             <!--<intent-filter>-->
                 <!--<action android:name="android.intent.action.MAIN"/>-->
 
