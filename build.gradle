@@ -1,6 +1,6 @@
 ext {
     configuration = [
-            package             : "com.dingdong.translate",
+            package             : "com.tingtong.translate",
             buildToolsVersion   : "27.0.3",
             compileVersion      : 27,
             minSdk              : 21,

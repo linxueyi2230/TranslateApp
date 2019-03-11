@@ -49,10 +49,10 @@
         <!--android:title="@string/menu_score"/>-->
 
 
-    <item
-        android:id="@+id/menu_about"
-        app:showAsAction="never"
-        android:title="@string/menu_about"/>
+    <!--<item-->
+        <!--android:id="@+id/menu_about"-->
+        <!--app:showAsAction="never"-->
+        <!--android:title="@string/menu_about"/>-->
 
     <item
         android:id="@+id/menu_setting"

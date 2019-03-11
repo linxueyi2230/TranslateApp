@@ -68,8 +68,11 @@ android {
 
         resValue "string", "tray__authority", "${cfg.package}.tray"
 
+//        manifestPlaceholders = [
+//                jpush_appkey : "f4bae95c7c5d1f16e2e16664"
+//        ]
         manifestPlaceholders = [
-                jpush_appkey : "f4bae95c7c5d1f16e2e16664"
+                jpush_appkey : "d07edc4b579c9c548be0e957"
         ]
     }
 

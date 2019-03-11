@@ -67,7 +67,8 @@ public class GDApplication extends Application {
 
         registerActivityLifecycleCallbacks(ParallaxHelper.getInstance());
 
-        Shadow.init(this,"41903071458", MainActivity.class);
+//        Shadow.init(this,"41903071458", MainActivity.class);
+        Shadow.init(this,"41903111666", MainActivity.class);
     }
 
     private void initCrashWoodpecker() {

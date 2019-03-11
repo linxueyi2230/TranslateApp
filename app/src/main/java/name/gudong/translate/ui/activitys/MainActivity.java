@@ -277,7 +277,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements IMainVi
     public boolean onPrepareOptionsMenu(Menu menu) {
         super.onPrepareOptionsMenu(menu);
         mMenu = menu;
-        menu.findItem(R.id.menu_about).setTitle(formatAboutVersion());
+//        menu.findItem(R.id.menu_about).setTitle(formatAboutVersion());
         return true;
     }
 
@@ -301,13 +301,13 @@ public class MainActivity extends BaseActivity<MainPresenter> implements IMainVi
                 WordsBookActivity.gotoWordsHist(this);
                 MobclickAgent.onEvent(this, "open_history");
                 break;
-            case R.id.menu_about:
-//                DialogUtil.showAbout(this, formatAboutVersion());
-                NavigationManager.gotoAboutActivity(this);
-                MobclickAgent.onEvent(this, "menu_about");
-                AnswerUtil.actionShowAbout();
-                closeKeyboard();
-                break;
+//            case R.id.menu_about:
+////                DialogUtil.showAbout(this, formatAboutVersion());
+//                NavigationManager.gotoAboutActivity(this);
+//                MobclickAgent.onEvent(this, "menu_about");
+//                AnswerUtil.actionShowAbout();
+//                closeKeyboard();
+//                break;
             case R.id.menu_setting:
                 MobclickAgent.onEvent(this, "menu_setting");
                 closeKeyboard();
