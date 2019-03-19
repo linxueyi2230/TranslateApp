@@ -32,7 +32,7 @@ android {
     buildToolsVersion cfg.buildToolsVersion
 
     defaultConfig {
-        applicationId cfg.package
+        applicationId "com.fanyiyixxia.translate"
         minSdkVersion cfg.minSdk
         targetSdkVersion cfg.targetSdk
         versionCode cfg.version_code
@@ -72,7 +72,7 @@ android {
 //                jpush_appkey : "f4bae95c7c5d1f16e2e16664"
 //        ]
         manifestPlaceholders = [
-                jpush_appkey : "d07edc4b579c9c548be0e957"
+                jpush_appkey : "66ba0610e0c97fcf7f6c2f6e"
         ]
     }
 
